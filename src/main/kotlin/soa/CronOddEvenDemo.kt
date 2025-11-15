@@ -16,7 +16,6 @@ import org.springframework.integration.dsl.PublishSubscribeChannelSpec
 import org.springframework.integration.dsl.integrationFlow
 import org.springframework.scheduling.annotation.EnableScheduling
 import org.springframework.scheduling.annotation.Scheduled
-import org.springframework.stereotype.Component
 import java.util.concurrent.atomic.AtomicInteger
 import kotlin.random.Random
 
@@ -46,7 +45,6 @@ private val logger = LoggerFactory.getLogger("soa.CronOddEvenDemo")
 class IntegrationApplication(
     private val sendNumber: SendNumber,
 ) {
-
     /**
      * Fuente de números secuenciales.
      * Bean de tipo AtomicInteger.
